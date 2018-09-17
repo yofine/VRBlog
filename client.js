@@ -17,7 +17,9 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('sky.jpg'));
+  r360.compositor.setBackground(r360.getAssetURL('PANO.jpg'), {
+    format: '3DTB'
+  });
 }
 
 window.React360 = {init};
